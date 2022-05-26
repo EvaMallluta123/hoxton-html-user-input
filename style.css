@@ -2,28 +2,69 @@ form {
     display: grid;
     gap: 1rem;
     width: 400px;
-    height: 500px;
+    height: 600px;
     margin-left: 400px;
     margin-top: 30px;
     background-color: white;
     border-radius: 2%;
-  
+    border: 1px solid black;
+ box-shadow: linear-gradient(180deg,var(--blue),var(--pink));
+font-family: sans-serif;
+
+
 }
+:root{
+    --blue:rgb(83, 145, 217);
+    --pink:rgb(211, 101, 215);
+    --border: 2px solid rgb(188, 184, 184);
+}
+  
 body{
-    background-image: linear-gradient(180deg,rgb(83, 145, 217) ,rgb(211, 101, 215));
+    box-shadow: linear-gradient(180deg,var(--blue),var(--pink));
 }
 h1{
     font-family: sans-serif;
     text-align: center;
-   background: -webkit-linear-gradient(left,rgb(83, 145, 217) ,rgb(211, 101, 215));
+   background: -webkit-linear-gradient(left,var(--blue),var(--pink));
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 
 }
 button{
-    background: -webkit-linear-gradient(left,rgb(211, 101, 215),rgb(83, 145, 217) );
+    background: -webkit-linear-gradient(left,var(--blue),var(--pink) );
   border-radius: 100px; 
   height: 30px;
   border: none;
 color: white;
+
+}
+label {
+
+  
+    padding-left: 10px;
+   
+
+}
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: var(--border)
+
+
+
+}
+select {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: var(--border)
+
+
+}
+textarea{
+    width: 380px;
+    border: none;
+    border-bottom: var(--border)
+
 }
