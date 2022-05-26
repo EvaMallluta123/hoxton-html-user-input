@@ -8,10 +8,8 @@ form {
     background-color: white;
     border-radius: 2%;
     border: 1px solid black;
- box-shadow: linear-gradient(180deg,var(--blue),var(--pink));
-font-family: sans-serif;
-
-
+    filter: drop-shadow(0 6px 5px var(--blue))
+    drop-shadow(0 9px 30px var(--pink));
 }
 :root{
     --blue:rgb(83, 145, 217);
@@ -20,7 +18,9 @@ font-family: sans-serif;
 }
   
 body{
-    box-shadow: linear-gradient(180deg,var(--blue),var(--pink));
+    background-image: -webkit-linear-gradient( left right,var(--blue) 20%,var(--pink)  30%,white 50%);
+
+
 }
 h1{
     font-family: sans-serif;
@@ -36,6 +36,8 @@ button{
   height: 30px;
   border: none;
 color: white;
+margin-left: 10px;
+margin-right: 10px;
 
 }
 label {
@@ -49,7 +51,7 @@ input {
     margin-left: 10px;
     margin-right: 10px;
     border: none;
-    border-bottom: var(--border)
+    border-bottom: var(--border);
 
 
 
